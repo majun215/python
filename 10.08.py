@@ -1,5 +1,5 @@
 #!/usr/bin/python
-b
+
 import sys, shelve
 
 def store_person(db):
@@ -38,7 +38,7 @@ def enter_command():
     return cmd
 
 def main():
-    database = shelve.open('/Users/majun/Desktop/majun/python/python基础教程/database.dat') # You may want to change this name
+    database = shelve.open('/home/dmtsai/majun/database.dat') # You may want to change this name
     try:
         while True:
             cmd = enter_command()
